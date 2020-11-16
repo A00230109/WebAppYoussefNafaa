@@ -1,0 +1,44 @@
+﻿@page
+@model BlogPost
+@{
+    ViewData["Title"] = "Blog Post";
+}
+
+<article>
+    <header>
+        <a href="#0" class="badge badge-primary">Category</a>
+        <h1>@ViewData["Title"]</h1>
+        <div>Posted on: <time datetime="2020-11-09T10:00">November 09, 2020 at 10:00 AM</time></div>
+        <div>
+            <span class="badge badge-secondary">20 likes</span>
+            <span class="badge badge-danger">2 dislikes</span>
+            <span class="badge badge-warning">7 comments</span>
+        </div>
+    </header>
+    <section>
+        <br />
+        <figure class="figure">
+            <img src="https://placehold.it/800x600" class="figure-img img-fluid" alt="snow-image" />
+            <figcaption class="figure-caption">
+                <p style="color:black;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                <p>Photo By: Youssef NAFAA</p>
+            </figcaption>
+        </figure>
+    </section>
+    <section id="comments">
+        <button type="button" class="btn btn-lg btn-primary">Like</button>
+        <h2>Comments</h2>
+        <div class="media">
+            <img src="https://placehold.it/64x64" alt="media object image" />
+        </div>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            <hr />
+            <div class="media">
+                <img src="https://placehold.it/64x64" alt="media object image" />
+            </div>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </section>
+</article>
+
+

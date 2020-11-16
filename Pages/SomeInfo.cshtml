@@ -1,0 +1,15 @@
+﻿@page
+@model WebAppYN.Pages.SomeInfoModel
+
+<h5>Host Value</h5>
+<p>@Request.Host.Value</p>
+
+<h5>User Agent</h5>
+<p>@Request.Headers["User-Agent"]</p>
+
+<h5>Accept</h5>
+<p>@Request.Headers["Accept"]</p>
+
+
+<h5>Content Encoding</h5>
+<p>@Html.Encode("Hello")</p>
